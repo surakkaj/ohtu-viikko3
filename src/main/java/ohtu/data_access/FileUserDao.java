@@ -5,10 +5,31 @@
  */
 package ohtu.data_access;
 
+import java.util.List;
+import ohtu.domain.User;
+
 /**
  *
  * @author Daniel Viktor Isaac
  */
-public class FileUserDao {
+public class FileUserDao implements UserDao{
+    
+    public FileUserDao(String filepath){
+        
+    }
+    @Override
+    public List<User> listAll() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public User findByName(String name) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void add(User user) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
